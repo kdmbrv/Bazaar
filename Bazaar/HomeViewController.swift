@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  HomeViewController.swift
 //  Bazaar
 //
 //  Created by Kostya Dombrovski on 7/13/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class HomeViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
