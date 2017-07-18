@@ -11,17 +11,16 @@ import UIKit
 class Message {
 	
 	//MARK: Properties
-	var senderUsername: String
-	var senderDisplayName: String
+	// var user: User
 	var listing: Listing
 	var messageContent: String
 	var previousMessage: Message?
 	var nextMessage: Message?
 	
 	//MARK: Initialization
-	init(senderUsername: String, listing: Listing, previousMessage: Message?) {
-		self.senderUsername = senderUsername
+	init(listing: Listing, messageContent: String, previousMessage: Message?) {
 		self.listing = listing
+		self.messageContent = messageContent
 		
 		if (previousMessage != nil) {
 			self.previousMessage = previousMessage
