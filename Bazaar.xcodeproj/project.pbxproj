@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		E36671801F183A8F007C6B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366717F1F183A8F007C6B2B /* AppDelegate.swift */; };
 		E36671821F183A8F007C6B2B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671811F183A8F007C6B2B /* HomeViewController.swift */; };
-		E36671841F183A8F007C6B2B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671831F183A8F007C6B2B /* SecondViewController.swift */; };
+		E36671841F183A8F007C6B2B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671831F183A8F007C6B2B /* AddViewController.swift */; };
 		E36671871F183A8F007C6B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E36671851F183A8F007C6B2B /* Main.storyboard */; };
 		E36671891F183A8F007C6B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36671881F183A8F007C6B2B /* Assets.xcassets */; };
 		E366718C1F183A8F007C6B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E366718A1F183A8F007C6B2B /* LaunchScreen.storyboard */; };
 		E36671971F183A90007C6B2B /* BazaarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671961F183A90007C6B2B /* BazaarTests.swift */; };
 		E36671A21F183A90007C6B2B /* BazaarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671A11F183A90007C6B2B /* BazaarUITests.swift */; };
 		E36671B01F184A1C007C6B2B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671AF1F184A1C007C6B2B /* SearchViewController.swift */; };
-		E36671B41F184B72007C6B2B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671B31F184B72007C6B2B /* UserViewController.swift */; };
+		E36671B41F184B72007C6B2B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671B31F184B72007C6B2B /* LoginViewController.swift */; };
 		E36671B61F1AAFE5007C6B2B /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671B51F1AAFE5007C6B2B /* MessagesTableViewController.swift */; };
 		E36671B81F1AB49B007C6B2B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671B71F1AB49B007C6B2B /* Message.swift */; };
 		E36671BA1F1AB4AB007C6B2B /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671B91F1AB4AB007C6B2B /* Listing.swift */; };
@@ -45,7 +45,7 @@
 		E366717C1F183A8F007C6B2B /* Bazaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bazaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E366717F1F183A8F007C6B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E36671811F183A8F007C6B2B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E36671831F183A8F007C6B2B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E36671831F183A8F007C6B2B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E36671861F183A8F007C6B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E36671881F183A8F007C6B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E366718B1F183A8F007C6B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		E36671A11F183A90007C6B2B /* BazaarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BazaarUITests.swift; sourceTree = "<group>"; };
 		E36671A31F183A90007C6B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E36671AF1F184A1C007C6B2B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		E36671B31F184B72007C6B2B /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E36671B31F184B72007C6B2B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E36671B51F1AAFE5007C6B2B /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		E36671B71F1AB49B007C6B2B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E36671B91F1AB4AB007C6B2B /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
@@ -115,14 +115,14 @@
 			children = (
 				E366717F1F183A8F007C6B2B /* AppDelegate.swift */,
 				E36671811F183A8F007C6B2B /* HomeViewController.swift */,
-				E36671831F183A8F007C6B2B /* SecondViewController.swift */,
+				E36671831F183A8F007C6B2B /* AddViewController.swift */,
 				E36671AF1F184A1C007C6B2B /* SearchViewController.swift */,
 				E36671B51F1AAFE5007C6B2B /* MessagesTableViewController.swift */,
 				E36671B71F1AB49B007C6B2B /* Message.swift */,
 				E36671BB1F1ABBCD007C6B2B /* MessageTableViewCell.swift */,
 				E36671B91F1AB4AB007C6B2B /* Listing.swift */,
 				E36671BD1F1D9FAC007C6B2B /* ListingTableViewCell.swift */,
-				E36671B31F184B72007C6B2B /* UserViewController.swift */,
+				E36671B31F184B72007C6B2B /* LoginViewController.swift */,
 				E36671851F183A8F007C6B2B /* Main.storyboard */,
 				E36671881F183A8F007C6B2B /* Assets.xcassets */,
 				E366718A1F183A8F007C6B2B /* LaunchScreen.storyboard */,
@@ -283,11 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36671B41F184B72007C6B2B /* UserViewController.swift in Sources */,
+				E36671B41F184B72007C6B2B /* LoginViewController.swift in Sources */,
 				E36671B61F1AAFE5007C6B2B /* MessagesTableViewController.swift in Sources */,
 				E36671BC1F1ABBCD007C6B2B /* MessageTableViewCell.swift in Sources */,
 				E36671BA1F1AB4AB007C6B2B /* Listing.swift in Sources */,
-				E36671841F183A8F007C6B2B /* SecondViewController.swift in Sources */,
+				E36671841F183A8F007C6B2B /* AddViewController.swift in Sources */,
 				E36671801F183A8F007C6B2B /* AppDelegate.swift in Sources */,
 				E36671BE1F1D9FAC007C6B2B /* ListingTableViewCell.swift in Sources */,
 				E36671B01F184A1C007C6B2B /* SearchViewController.swift in Sources */,

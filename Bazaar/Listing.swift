@@ -13,11 +13,11 @@ class Listing {
 	// MARK: Properties
 	var title: String
 	var photo: UIImage
-	var price: Double
+	var price: NSNumber
 	// var user: User
 	
 	// MARK: Initialization
-	init(title: String, photo: UIImage, price: Double) {
+	init(title: String, photo: UIImage, price: NSNumber) {
 		self.title = title
 		self.photo = photo
 		self.price = price
