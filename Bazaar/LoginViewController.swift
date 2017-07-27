@@ -13,6 +13,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var usernameTextField: UITextField!
 	@IBOutlet weak var passwordTextField: UITextField!
 	@IBOutlet weak var loginButton: UIButton!
+	@IBOutlet var errorMessage: UILabel!
+	
+	var logins: [String: String] = ["admin": "password"]
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 		// Delegates
 		usernameTextField.delegate = self
 		passwordTextField.delegate = self
+		
+		self.errorMessage.text = ""
+		self.errorMessage.textColor = UIColor.red
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,13 +51,27 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 		}
 		else if (textField == passwordTextField) {
 			// Run login function
+			loginButtonPressed(self)
 		}
 		
 		return true
 	}
 
     //MARK: Actions
-	@IBAction func loginUser(_ sender: UIButton) {
+	@IBAction func loginButtonPressed(_ sender: Any?) {
+		let username = usernameTextField.text
+		let password = passwordTextField.text
+		if (logins[username!] != nil) {
+			if (logins[username!]! == password!) {
+				self.performSegue(withIdentifier: "logInSuccessful", sender: self)
+			}
+			else {
+				self.errorMessage.text = "Incorrect password!"
+			}
+		}
+		else {
+			self.errorMessage.text = "Username not recognized!"
+		}
 	}
 
 }
