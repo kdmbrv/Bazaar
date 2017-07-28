@@ -19,6 +19,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		let userDefault = UserDefaults.standard
+		
+		let savedData = userDefault.bool(forKey: "isLoggedIn")
+		if (savedData) {
+			self.performSegue(withIdentifier: "logInSuccessful", sender: self)
+		}
 
 		// Stylings
 		usernameTextField.layer.cornerRadius = 8
@@ -33,6 +40,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 		usernameTextField.delegate = self
 		passwordTextField.delegate = self
 		
+		// Error message
 		self.errorMessage.text = ""
 		self.errorMessage.textColor = UIColor.red
     }
@@ -63,6 +71,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 		let password = passwordTextField.text
 		if (logins[username!] != nil) {
 			if (logins[username!]! == password!) {
+				let userDefault = UserDefaults.standard
+				userDefault.set(true, forKey: "isLoggedIn")
+				userDefault.synchronize()
 				self.performSegue(withIdentifier: "logInSuccessful", sender: self)
 			}
 			else {
