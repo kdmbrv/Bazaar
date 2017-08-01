@@ -22,6 +22,7 @@
 		E36671BA1F1AB4AB007C6B2B /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671B91F1AB4AB007C6B2B /* Listing.swift */; };
 		E36671BC1F1ABBCD007C6B2B /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671BB1F1ABBCD007C6B2B /* MessageTableViewCell.swift */; };
 		E36671BE1F1D9FAC007C6B2B /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36671BD1F1D9FAC007C6B2B /* ListingTableViewCell.swift */; };
+		E3D0A1DF1F3011B200BE3F9A /* BazaarTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D0A1DE1F3011B200BE3F9A /* BazaarTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E36671B91F1AB4AB007C6B2B /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		E36671BB1F1ABBCD007C6B2B /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		E36671BD1F1D9FAC007C6B2B /* ListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
+		E3D0A1DE1F3011B200BE3F9A /* BazaarTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BazaarTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				E36671BD1F1D9FAC007C6B2B /* ListingTableViewCell.swift */,
 				E36671B31F184B72007C6B2B /* LoginViewController.swift */,
 				E36671851F183A8F007C6B2B /* Main.storyboard */,
+				E3D0A1DE1F3011B200BE3F9A /* BazaarTabBarController.swift */,
 				E36671881F183A8F007C6B2B /* Assets.xcassets */,
 				E366718A1F183A8F007C6B2B /* LaunchScreen.storyboard */,
 				E366718D1F183A8F007C6B2B /* Info.plist */,
@@ -287,6 +290,7 @@
 				E36671B61F1AAFE5007C6B2B /* MessagesTableViewController.swift in Sources */,
 				E36671BC1F1ABBCD007C6B2B /* MessageTableViewCell.swift in Sources */,
 				E36671BA1F1AB4AB007C6B2B /* Listing.swift in Sources */,
+				E3D0A1DF1F3011B200BE3F9A /* BazaarTabBarController.swift in Sources */,
 				E36671841F183A8F007C6B2B /* AddViewController.swift in Sources */,
 				E36671801F183A8F007C6B2B /* AppDelegate.swift in Sources */,
 				E36671BE1F1D9FAC007C6B2B /* ListingTableViewCell.swift in Sources */,
