@@ -28,7 +28,8 @@ class MessagesTableViewController: UITableViewController {
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		tabBarItem = UITabBarItem(title: "Messages", image: #imageLiteral(resourceName: "message"), tag: 3)
-		tabBarItem.badgeValue = "3"
+		// SET BADGE VALUE HERE
+		//tabBarItem.badgeValue = "3"
 	}
 
     // MARK: - Table view data source
