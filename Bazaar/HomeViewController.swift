@@ -12,9 +12,11 @@ class HomeViewController: UIViewController {
 
 	//MARK: Properties
 	@IBOutlet weak var loginNavigator: UIBarButtonItem!
+	@IBOutlet weak var welcomeLabel: UILabel!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		welcomeLabel.text = ""
 		// Do any additional setup after loading the view, typically from a nib.
 		
 		// Set to logout if already logged in
@@ -23,6 +25,8 @@ class HomeViewController: UIViewController {
 		let savedData = userDefault.bool(forKey: "isLoggedIn")
 		if (savedData) {
 			loginNavigator.title = "Log Out"
+			let userName = userDefault.string(forKey: "userName") ?? "user"
+			welcomeLabel.text = "Welcome, " + userName + "!"
 		}
 	}
 
@@ -36,7 +40,9 @@ class HomeViewController: UIViewController {
 			let userDefault = UserDefaults.standard
 			userDefault.set(false, forKey: "isLoggedIn")
 			userDefault.synchronize()
+			loginNavigator.title = "Log In"
 			viewWillAppear(true)
+			viewDidLoad()
 		}
 		else {
 			self.performSegue(withIdentifier: "goToLogin", sender: self)

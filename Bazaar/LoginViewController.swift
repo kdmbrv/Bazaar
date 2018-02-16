@@ -16,13 +16,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet var errorMessage: UILabel!
 	
 	var logins: [String: String] = ["admin": "password"]
+	var users: [String: String] = ["admin": "Admin"]
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		let userDefault = UserDefaults.standard
+		let defaults = UserDefaults.standard
 		
-		let savedData = userDefault.bool(forKey: "isLoggedIn")
+		let savedData = defaults.bool(forKey: "isLoggedIn")
 		if (savedData) {
 			self.performSegue(withIdentifier: "logInSuccessful", sender: self)
 		}
@@ -73,6 +74,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 			if (logins[username!]! == password!) {
 				let userDefault = UserDefaults.standard
 				userDefault.set(true, forKey: "isLoggedIn")
+				userDefault.set(users[username!], forKey: "userName")
 				userDefault.synchronize()
 				self.performSegue(withIdentifier: "logInSuccessful", sender: self)
 			}
